@@ -25,6 +25,8 @@ var UserSchema = new Schema({
 	}
 });
 
+//hashing a password before saving it to the database
+
 var User = mongoose.model("User", UserSchema);
 
 module.exports = User;

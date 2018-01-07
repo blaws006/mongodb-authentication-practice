@@ -17,6 +17,11 @@ mongoose.Promise = Promise;
 
 mongoose.connect("mongodb://localhost/auth-practice");
 
+var routes = require("./routes/router")
+
+app.use("/", routes);
+
+
 app.listen(PORT, function(){
     console.log("App running on " + PORT);
 });
